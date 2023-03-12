@@ -73,12 +73,21 @@ li {
     padding: 20px;
 
 }
-
+.plus {
+    display: none;
+}
 .minus {
     display: none;
 }
-
-
+.akkordeon-img{
+    display: block;
+    width: 50%;
+    height: auto;
+   margin: auto;
+}
+.akkordeon:hover .plus {
+    display: block;
+}
 .akkordeon .checkbox[type=checkbox]:checked + .label:nth-of-type(n) + ul, .akkordeon .checkbox[type=checkbox]:hover + .label + ul {
     display: block;
     min-height: 120px;
@@ -96,3 +105,4 @@ li {
 .akkordeon .checkbox[type=checkbox]:checked + .label:nth-of-type(n) > .plus, .akkordeon .checkbox[type=checkbox]:hover + .label > .plus {
     display: none;
 }
+
