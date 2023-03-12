@@ -3,7 +3,18 @@
 *::after {
     box-sizing: border-box;
 }
-
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.item{
+    position: relative;
+    display: block;
+}
+.item-2{
+    display: none;
+}
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -19,4 +30,12 @@ li{
     max-width: 1000px;
     margin: auto;
     padding: 20px;
+}
+
+.akkordeon .checkbox[type=checkbox]:checked + label + ul,
+.akkordeon .checkbox[type=checkbox]:checked + label:nth-of-type(n) + ul {
+    display: block;
+}
+.akkordeon .checkbox[type=checkbox]:hover + label + ul {
+    display: block;
 }
