@@ -8,17 +8,23 @@
     top: 0;
     left: 0;
     opacity: 0;
+    width: 100%;
+    height: 100%;
 }
 .item{
     position: relative;
     display: flex;
     flex-direction: column;
-    background: #262626;
     font-size: 14px;
     font-weight: 300;
-    height: 60px;
+    height: auto;
+    padding-bottom: 30px;
+}
+.label{
+    background: #262626;
     box-shadow: 0 1px 9px #0D0D0D;
-
+    height: 60px;
+    border-radius: 5px;
 }
 .item-2{
     display: none;
@@ -53,7 +59,17 @@ li{
 .akkordeon .checkbox[type=checkbox]:checked + label + ul,
 .akkordeon .checkbox[type=checkbox]:checked + label:nth-of-type(n) + ul {
     display: block;
+    height: 120px;
+    transition: 1s;
+    background: #1E1E1E;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.76);
 }
+
 .akkordeon .checkbox[type=checkbox]:hover + label + ul {
     display: block;
+    height: 120px;
+    transition: 1s;
+    background: #1E1E1E;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.76);
+    border-radius: 0 0 5px 5px;
 }
